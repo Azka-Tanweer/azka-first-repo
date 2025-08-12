@@ -41,11 +41,25 @@
             text-decoration: none;
             color: #fff;
         }
+        .header-main{
+         display: flex;  
+         justify-content: space-between; 
+         align-items: center;
+         gap: 20px;
+        }
+        .header-text{
+            flex: 1;
+        }
+        .Profile-img{
+           width: 30%;
+           height: 30%;
+           object-fit: cover;
+        }
         header h1{
             font-size: 45px;
             font-weight: bold;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: ;
+            
         }
         .colored{
             color: cadetblue;
@@ -67,12 +81,6 @@
             display: inline-block;
             vertical-align: middle;
            cursor: pointer;
-        }
-        header{
-            background-image: url(pp.jpg);
-            background-repeat: no-repeat;
-            background-position: 45em 7em;
-            background-size: 300px;
         }
         section h1{
             font-size: 40px;
@@ -184,6 +192,63 @@
         .contact .card:hover{
             transform: translateY(-5px);
         }
+        @media only screen and (max-width:480px) {
+           header nav div{
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+           }
+           .header-main{
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+           }
+          .header-text{
+            flex: 0;
+           }
+          .Profile-img{
+            order: -1;
+           width: 60%;
+           height: 60%;
+           object-fit: cover;
+           ali
+           }
+           header nav a{
+            font-size: 14px;
+            word-spacing: normal;
+           }
+           header h1{
+            font-size: 28px;
+            text-align: center;
+           }
+           header h2{
+            font-size: 18px;
+            text-align: center;
+           }
+           header .content-wrapper{
+            margin: auto;
+            text-align: center;
+            width: 90%;
+           }
+           section h1{
+            font-size: 26px;
+           }
+           section p{
+            font-size: 16px;
+            padding: 0px 10px;
+           }
+           .services .card, .skills .card, .Education .card, .contact .card {
+                width: 90%;
+            }
+            img{
+                width: 30px;
+                height: auto;
+            }
+            button{
+                padding: 8px 15px;
+                font-size: 15px;
+            }
+        }
        
         
     </style>
@@ -201,13 +266,20 @@
             </div>
         </nav>
         <br>
+        <div class="header-main">
+         <div class="header-text">  
         <h1>Hi, I'm <span class="colored">Azka Tanweer</span></h1>
         <h2>Fronted Developer | Computer Scientist</h2>
-        <div class="content-wrapper"><p>"I’m a passionate Web Developer currently honing my skills through an internship at DevVerse. I specialize in creating responsive, user-friendly, and visually appealing websites using HTML, CSS, JavaScript, and modern frameworks. My focus is on writing clean, maintainable code and delivering digital experiences that work seamlessly across devices."</p></div>
+        <div class="content-wrapper">
+            <p>"I’m a passionate Web Developer currently honing my skills through an internship at DevVerse. I specialize in creating responsive, user-friendly, and visually appealing websites using HTML, CSS, JavaScript, and modern frameworks. My focus is on writing clean, maintainable code and delivering digital experiences that work seamlessly across devices."</p>
+        </div>
     <div><button class="round"><a href="file:///C:/Users/Hp/Downloads/Azka%20Tanweer%20Resume%202025.pdf">My CV</a></button>
         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="3a745497-d971-4596-b9a6-08c8c49de7d1_removalai_preview.png" width="2%"></a>
         <a href="https://github.com/Azka-Tanweer"><img src="github icon.png"width="2%"></a>
         <a href="https://www.linkedin.com/in/azkatanweer/"><img src="linkedin icon.png"width="2%"></a>
+    </div>
+    </div>
+    <img src="pp.jpg" alt="Profile Picture" class="Profile-img">
     </div>
     </header>
     <br><br><br><br><br><br>
